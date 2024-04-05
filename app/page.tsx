@@ -1,113 +1,123 @@
 import Image from "next/image";
-
+import Cloud from "@/public/images/cloud.png";
+import Mount from "@/public/images/mountain.png";
+import Sai from "@/public/images/saiguna.png";
+import Gif from "@/public/images/cat-typing.gif";
+import Chilli from "@/public/images/chillies.png"
+import Link from "next/link";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+    <div className="bg-[#e4f9f5] min-h-screen relative">
+      <div className="pt-[40px] flex justify-end mr-[300px] " data-aos="fade-down" 
+     data-aos-duration="1500">
+      <Image
+      src={Cloud}
+      alt="cloud"
+      />
+      </div>
+      <div className="text-center pt-[70px] text-[#66bfbf] " data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+        <h1 className="text-[5.625rem]"> I&apos;m Saiguna </h1>
+        <h2 className=" text-[2.5rem] pt-[20px] ">a <span>pro</span>
+        grammer.
+        </h2>
+      </div>
+      <div className="pt-[45px] absolute left-[250px] bottom-[300px] " data-aos="fade-right"  data-aos-duration="3000">
+      <Image
+      src={Cloud}
+      alt="cloud"
+      />
+      </div>
+      <div className="flex justify-center" data-aos="zoom-in-up" data-aos-duration="3000">
+      <Image
+      src={Mount}
+      alt="Mountaine"
+      />
+      </div>
+    </div>
+    <div className="  mx-0 my-[100px]">
+      <div className="text-center items-center flex flex-col">
+
+  <div className="bg-[#c6ccca] h-[180px] w-[180px] rounded-[50%] overflow-hidden  "data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="linear">
+<Image src={Sai} alt="saiguna" width={150}  height={100} className=" m-1 mx-2"/> 
+  </div>
+<h2 className="text-[#66bfbf] text-[2.5rem] p-[20px] pb-8" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in">Hello.</h2>
+<p className="w-[30%] leading-[2]" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">I am an Web developer and Android developer.</p>
+      </div>
+      
+        <hr className="border-dotted border-[#eaf6f6] rounded-[50%] border-b-0 mx-auto my-[100px] w-[6%]"/>
+        <div>
+
+        <h2 className=" text-[#66bfbf] text-[2.5rem] text-center" data-aos="fade-left"
+     data-aos-offset="500"
+     data-aos-duration="1500">My Skills</h2>
+        <div className="grid grid-cols-[0.5fr_1fr] grid-rows-[1fr_1fr] w-[50%] text-left mx-auto mt-[100px] mb-0 gap-y-[2rem]" >
+        <Image src={Gif} alt="gif" className="overflow-clip  box-content" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"/>
+        <div className="block" data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+
+        <h3 className="text-[#11999e] font-bold block my-4 mx-0 isolate">Design & Development</h3>
+<p className="block my-4 mx-0 isolate">
+I started learning to code when I was 19 years old because I wanted to make my own video games. Over time, I have gained a wealth of experience designing and developing mobile and web applications.</p>
         </div>
-      </div>
+<Image src={Chilli} alt="chilli" className=" ml-[30px] pr-10" width={120} data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" />
+<div className="block" data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300">
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+<h2 className=" text-[#66bfbf] text-[1.17rem] font-bold block my-4 mx-0 isolate">Hot Wings Challenge
+</h2>
+<p className="block my-4 mx-0 isolate">But my best skill is actually in eating hot wings. I am the undisputed queen of hot wing challenges. Ghost Peppers and Carolina Reapers are my favourite snacks.</p>
+</div>
+        </div>
+        </div>
+        <hr className="border-dotted border-[#eaf6f6] rounded-[50%] border-b-0 mx-auto my-[100px] w-[6%]"/>
+        <div className=" text-center isolate block">
+          <h2 className="text-[#66bfbf] font-bold text-[1.5rem] my-3 mx-0 " data-aos="fade-down"
+     data-aos-anchor-placement="center-center" data-aos-duration="2000">Get In Touch</h2>
+          <h3 className="text-[#11999e] font-bold text-[1.17rem] my-4 mx-0 isolate" data-aos="fade-left"
+     data-aos-anchor-placement="center-center" data-aos-duration="2000">if you love hot wings as much as I do.</h3>
+          <p className="my-4 w-[40%] mt-[40px] mb-[60px] mx-auto" data-aos="fade-right"
+     data-aos-anchor-placement="center-center" data-aos-duration="2000">Love hot wings as much as I do? Let&apos;s talk about how awesome they are! We can code while we eat hot wings!</p>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+          <Link 
+  href="mailto:saiguna.vanam7@gmail.com"
+  className="text-white rounded-[8px] text-[20px] pt-[10px] pr-[20px] pb-[10px] pl-[20px] bg-gradient-to-b from-[#11cdd4] to-[#11999e] mx-[20px] my-[10px] hover:after:bg-green-400"
+  data-aos="fade-zoom-out"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+>
+    
+    CONTACT ME
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+</Link>
+        </div>
+        <div className="bg-[#66bfbf] pt-12 px-4 pb-5 mt-20 w-full " data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300">
+    <div className="text-center">
+      <Link href="" className="mx-5 my-2.5 hover:text-white block sm:inline">LinkedIn</Link>
+      <Link href="" className="mx-5 my-2.5 hover:text-white block sm:inline">FaceBook</Link>
+      <Link href="https://www.kloudcodes.com" target="_blank" className="mx-5 my-2.5 hover:text-white block sm:inline">Website</Link>
+    </div>
+    <p className="text-white text-center px-0 py-5 text-xs leading-relaxed my-4">© Sai guna @ The App strahatt.</p>
+  </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+      
+</div>
+    </>
+    
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
   );
 }
